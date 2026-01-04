@@ -13,7 +13,7 @@ app.use(express.json());
 
 // Root endpoint
 app.get("/", (req, res) => {
-  res.send("Hello from TypeScript Node.js server!");
+  res.send(" server!");
 });
 
 // Start server
