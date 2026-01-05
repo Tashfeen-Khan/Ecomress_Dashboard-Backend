@@ -26,7 +26,7 @@ export const login = async (req: Request, res: Response) => {
   }
 };
 
-export const getProfile = async (req: AuthRequest, res: Response) => {
+export const getProduct = async (req: AuthRequest, res: Response) => {
   try {
     // req.user contains the decoded token payload (from auth middleware)
     res.json({ 

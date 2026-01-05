@@ -1,5 +1,5 @@
 import express from "express";
-import { login,  getProfile } from "../controllers/authController"; // Make sure getProfile is imported
+import { login,  getProduct } from "../controllers/authController"; // Make sure getProfile is imported
 import { auth } from "../middleware/auth";
 
 const router = express.Router();
@@ -9,6 +9,6 @@ const router = express.Router();
 router.post("/login", login);
 
 // Protected route
-router.get("/profile", auth, getProfile); // ✅ This will use the auth middleware
+router.get("/products", auth, getProduct); // ✅ This will use the auth middleware
 
 export default router;
